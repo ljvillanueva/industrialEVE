@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://humblesoftware.com/flotr2/documentation -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>flotr2 - documentation</title>
+    
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Flotr2 HTML5 Canvas graphing library for JavasScript usage and documentation.">
+    <link rel="icon" type="image/gif" href="http://humblesoftware.com/static/images/favicon.gif">
+    <link rel="stylesheet" type="text/css" href="./flotr2 - documentation_files/hsd.css">
+    <link rel="stylesheet" type="text/css" href="./flotr2 - documentation_files/hsd-flotr2.css">
+<style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style></head>
+
+<body>
+<div id="body-container" class="flotr2-documentation">
+<div id="header-container"><div id="header">Flotr2</div></div>
+<div id="links-container">
+  <div id="links">
+    <div id="mainLinks">
+<ul>
+  <li>
+    <a href="http://humblesoftware.com/flotr2/index"><span>examples</span></a>
+  </li>
+  <li class="current-page">
+    <a href="./flotr2 - documentation_files/flotr2 - documentation.html"><span>docs</span></a>
+  </li>
+  <li>
+    <a href="http://humblesoftware.com/flotr2/feedback"><span>feedback</span></a>
+  </li>
+  <li>
+    <a href="http://www.github.com/HumbleSoftware/Flotr2"><span>source</span></a>
+  </li>
+  <li>
+    <a href="http://humblesoftware.com/"><span>humble software</span></a>
+  </li>
+</ul>
+
+<div id="github-ribbon">
+  <a href="http://github.com/HumbleSoftware/Flotr2"><img style="position: absolute; top: 0; right: 0; border: 0;" src="./flotr2 - documentation_files/github-ribbon.png" alt="Fork me on GitHub">
+</a>
+</div>
+    </div>
+    <div id="links-footer"></div>
+  </div>
+</div>
+
+<div id="content-container">
+    <div id="content">
+        <div id="documentation-nav">
+  <h2>Contents</h2>
+  <ul class="nav">
+    <li><a href="http://humblesoftware.com/flotr2/documentation#introduction">Introduction</a></li>
+    <li><a href="http://humblesoftware.com/flotr2/documentation#usage">Usage</a></li>
+    <li><a href="http://humblesoftware.com/flotr2/documentation#configuration">Configuration</a></li>
+    <li><a href="http://humblesoftware.com/flotr2/documentation#development">Development</a></li>
+    <li><a href="http://humblesoftware.com/flotr2/documentation#resources">Resources</a></li>
+  </ul>
+</div>
+
+<section class="introduction">
+  <h2><a id="introduction">Introduction</a></h2>
+  <p>
+  Flotr2 is a library for drawing HTML5 charts and graphs.  It is a branch of 
+  <a title="flotr" href="http://code.google.com/p/flotr/">flotr</a> which removes
+  the Prototype dependency and includes many improvements.
+  </p>
+
+  <h3>Features:</h3>
+  <ul class="features">
+    <li>mobile support</li>
+    <li>framework independent</li>
+    <li>extensible plugin framework</li>
+    <li>custom chart types</li>
+    <li>FF, Chrome, IE6+, Android, iOS</li>
+  </ul>
+  <ul class="types">
+    <li>lines</li>
+    <li>bars</li>
+    <li>candles</li>
+    <li>pies</li>
+    <li>bubbles</li>
+  </ul>
+</section>
+
+<section>
+  <h2><a id="usage">Usage</a></h2>
+
+  <p>
+  To use Flotr2, include the <code>flotr2.min.js</code> script in your page and
+  create a visible <code>&lt;div&gt;</code> with positive width and height.
+  A graph is drawn with the <code>Flotr.draw(container, data, options)</code>
+  method.
+  </p>
+
+  <h3>
+    <a id="usage-example">Usage Example</a> (<a href="http://humblesoftware.com/flotr2/example">stand alone</a>)
+  </h3>
+
+  <div class="editor usage"><div class="editor html"><div class="render" id="editor-render-0"><iframe></iframe></div><div class="controls"><button class="run btn large primary">Run</button></div><div class="source"><div class="errors" style="display: none;"></div><div class="CodeMirror"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 5.1875px; left: 32.1875px;"><textarea style="position: absolute; padding: 0; width: 1px;" wrap="off" autocorrect="off" autocapitalize="off"></textarea></div><div class="CodeMirror-scroll cm-s-default" tabindex="-1"><div style="position: relative; height: 938px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-gutter" style="height: 938px;"><div class="CodeMirror-gutter-text"><pre>&nbsp;1</pre><pre>2</pre><pre>3</pre><pre>4</pre><pre>5</pre><pre>6</pre><pre>7</pre><pre>8</pre><pre>9</pre><pre>10</pre><pre>11</pre><pre>12</pre><pre>13</pre><pre>14</pre><pre>15</pre><pre>16</pre><pre>17</pre><pre>18</pre><pre>19</pre><pre>20</pre><pre>21</pre><pre>22</pre><pre>23</pre><pre>24</pre><pre>25</pre><pre>26</pre><pre>27</pre><pre>28</pre><pre>29</pre><pre>30</pre><pre>31</pre><pre>32</pre><pre>33</pre><pre>34</pre><pre>35</pre><pre>36</pre><pre>37</pre><pre>38</pre><pre>39</pre><pre>40</pre><pre>41</pre><pre>42</pre><pre>43</pre><pre>44</pre><pre>45</pre><pre>46</pre><pre>47</pre><pre>48</pre><pre>49</pre><pre>50</pre><pre>51</pre><pre>52</pre><pre>53</pre><pre>54</pre><pre>55</pre><pre>56</pre><pre>57</pre><pre>58</pre></div></div><div class="CodeMirror-lines"><div style="position: relative; margin-left: 27px;"><div style="position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden"></div><pre class="CodeMirror-cursor" style="top: 0px; left: 0px;">&nbsp;</pre><div style=""><pre><span class="cm-tag">&lt;html&gt;</span></pre><pre>  <span class="cm-tag">&lt;head&gt;</span></pre><pre>    <span class="cm-tag">&lt;style</span> <span class="cm-attribute">type</span>=<span class="cm-string">"text/css"</span><span class="cm-tag">&gt;</span></pre><pre>      <span class="cm-tag">body</span> {</pre><pre>        <span class="cm-variable">margin</span>: <span class="cm-number">0px</span>;</pre><pre>        <span class="cm-variable">padding</span>: <span class="cm-number">0px</span>;</pre><pre>      }</pre><pre>      <span class="cm-atom">#container</span> {</pre><pre>        <span class="cm-variable">width</span> : <span class="cm-number">600px</span>;</pre><pre>        <span class="cm-variable">height</span>: <span class="cm-number">384px</span>;</pre><pre>        <span class="cm-variable">margin</span>: <span class="cm-number">8px</span> <span class="cm-number">auto</span>;</pre><pre>      }</pre><pre>    <span class="cm-tag">&lt;/style&gt;</span></pre><pre>  <span class="cm-tag">&lt;/head&gt;</span></pre><pre>  <span class="cm-tag">&lt;body&gt;</span></pre><pre>    <span class="cm-tag">&lt;div</span> <span class="cm-attribute">id</span>=<span class="cm-string">"container"</span><span class="cm-tag">&gt;&lt;/div&gt;</span></pre><pre>    <span class="cm-comment">&lt;!--[if IE]&gt;</span></pre><pre>    <span class="cm-comment">&lt;script type="text/javascript" src="/static/lib/FlashCanvas/bin/flashcanvas.js"&gt;&lt;/script&gt;</span></pre><pre>    <span class="cm-comment">&lt;![endif]--&gt;</span></pre><pre>    <span class="cm-tag">&lt;script</span> <span class="cm-attribute">type</span>=<span class="cm-string">"text/javascript"</span> <span class="cm-attribute">src</span>=<span class="cm-string">"/static/js/flotr2.min.js"</span><span class="cm-tag">&gt;&lt;/script&gt;</span></pre><pre>    <span class="cm-tag">&lt;script</span> <span class="cm-attribute">type</span>=<span class="cm-string">"text/javascript"</span><span class="cm-tag">&gt;</span></pre><pre>      (<span class="cm-keyword">function</span> () {</pre><pre> </pre><pre>        <span class="cm-keyword">var</span></pre><pre>          <span class="cm-def">container</span> = <span class="cm-variable">document</span>.<span class="cm-property">getElementById</span>(<span class="cm-string">'container'</span>),</pre><pre>          <span class="cm-def">start</span> = (<span class="cm-keyword">new</span> <span class="cm-variable">Date</span>).<span class="cm-property">getTime</span>(),</pre><pre>          <span class="cm-def">data</span>, <span class="cm-def">graph</span>, <span class="cm-def">offset</span>, <span class="cm-def">i</span>;</pre><pre> </pre><pre>        <span class="cm-comment">// Draw a sine curve at time t</span></pre><pre>        <span class="cm-keyword">function</span> <span class="cm-def">animate</span> (<span class="cm-def">t</span>) {</pre><pre> </pre><pre>          <span class="cm-variable-2">data</span> = [];</pre><pre>          <span class="cm-variable-2">offset</span> = <span class="cm-number">2</span> * <span class="cm-variable">Math</span>.<span class="cm-property">PI</span> * (<span class="cm-variable-2">t</span> - <span class="cm-variable-2">start</span>) / <span class="cm-number">10000</span>;</pre><pre> </pre><pre>          <span class="cm-comment">// Sample the sine function</span></pre><pre>          <span class="cm-keyword">for</span> (<span class="cm-variable-2">i</span> = <span class="cm-number">0</span>; <span class="cm-variable-2">i</span> &lt; <span class="cm-number">4</span> * <span class="cm-variable">Math</span>.<span class="cm-property">PI</span>; <span class="cm-variable-2">i</span> += <span class="cm-number">0.2</span>) {</pre><pre>            <span class="cm-variable-2">data</span>.<span class="cm-property">push</span>([<span class="cm-variable-2">i</span>, <span class="cm-variable">Math</span>.<span class="cm-property">sin</span>(<span class="cm-variable-2">i</span> - <span class="cm-variable-2">offset</span>)]);</pre><pre>          }</pre><pre> </pre><pre>          <span class="cm-comment">// Draw Graph</span></pre><pre>          <span class="cm-variable-2">graph</span> = <span class="cm-variable">Flotr</span>.<span class="cm-property">draw</span>(<span class="cm-variable-2">container</span>, [ <span class="cm-variable-2">data</span> ], {</pre><pre>            <span class="cm-property">yaxis</span> : {</pre><pre>              <span class="cm-property">max</span> : <span class="cm-number">2</span>,</pre><pre>              <span class="cm-property">min</span> : -<span class="cm-number">2</span></pre><pre>            }</pre><pre>          });</pre><pre> </pre><pre>          <span class="cm-comment">// Animate</span></pre><pre>          <span class="cm-variable">setTimeout</span>(<span class="cm-keyword">function</span> () {</pre><pre>            <span class="cm-variable-2">animate</span>((<span class="cm-keyword">new</span> <span class="cm-variable">Date</span>).<span class="cm-property">getTime</span>());</pre><pre>          }, <span class="cm-number">50</span>);</pre><pre>        }</pre><pre> </pre><pre>        <span class="cm-variable-2">animate</span>(<span class="cm-variable-2">start</span>);</pre><pre>      })();</pre><pre>    <span class="cm-tag">&lt;/script&gt;</span></pre><pre>  <span class="cm-tag">&lt;/body&gt;</span></pre><pre><span class="cm-tag">&lt;/html&gt;</span></pre></div></div></div></div></div></div></div></div></div></div>
+
+  <h3>API: <code>Flotr.draw(container, data, options)</code></h3>
+  <ul>
+    <li>
+      <code>container</code>
+      a visible DOM element with positive width and height.
+    </li>
+    <li>
+      <code>data</code>
+      an Array of series.
+    </li>
+    <li>
+      <code>options</code>
+      a configuration object containing flotr configuration options,
+      defining axes, grids, legends, etc.
+    </li>
+  </ul>
+
+  <h3>Data</h3>
+
+  <p>
+  Each series is either an array of points <code>[[x0, y0], [x1, y1] ...]</code>
+  or an object with series options and a data member.
+  </p>
+
+  <h3>Internet Explorer</h3>
+
+  <p>
+  Flotr2 is fully supported in IE 9+ and <a title="explorer canvas" href="http://code.google.com/p/explorercanvas/">explorer canvas</a> or <a title="flash canvas" href="http://flashcanvas.net/">flashcanvas</a> may be
+  conditionally included to support older versions, as seen in the <a href="http://humblesoftware.com/flotr2/documentation#usage-example" title="usage example">example</a> above.
+  </p>
+</section>
+
+<section>
+  <h2><a id="configuration">Configuration</a></h2>
+
+  <p>
+  The following are the default configuration options for Flotr.  Additional
+  options are added for individual graph types and plugins.  In general, those
+  can be found at the top of each plugin or graph file.
+  </p>
+
+  <h3>Flotr2 Defaults</h3>
+  <div class="editor api"><div class="editor javascript no-run"><div class="render" id="editor-render-1"></div><div class="controls"><button class="run btn large primary">Run</button></div><div class="source"><div class="errors" style="display: none;"></div><div class="CodeMirror"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 565.1875px; left: 240.1875px;"><textarea style="position: absolute; padding: 0px; width: 1px;" wrap="off" autocorrect="off" autocapitalize="off"></textarea></div><div class="CodeMirror-scroll cm-s-default" tabindex="-1"><div style="position: relative; height: 1594px; width: 1280px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-gutter" style="height: 1594px;"><div class="CodeMirror-gutter-text"><pre>&nbsp;1</pre><pre>2</pre><pre>3</pre><pre>4</pre><pre>5</pre><pre>6</pre><pre>7</pre><pre>8</pre><pre>9</pre><pre>10</pre><pre>11</pre><pre>12</pre><pre>13</pre><pre>14</pre><pre>15</pre><pre>16</pre><pre>17</pre><pre>18</pre><pre>19</pre><pre>20</pre><pre>21</pre><pre>22</pre><pre>23</pre><pre>24</pre><pre>25</pre><pre>26</pre><pre>27</pre><pre>28</pre><pre>29</pre><pre>30</pre><pre>31</pre><pre>32</pre><pre>33</pre><pre>34</pre><pre>35</pre><pre>36</pre><pre>37</pre><pre>38</pre><pre>39</pre><pre>40</pre><pre>41</pre><pre>42</pre><pre>43</pre><pre>44</pre><pre>45</pre><pre>46</pre><pre>47</pre><pre>48</pre><pre>49</pre><pre>50</pre><pre>51</pre><pre>52</pre><pre>53</pre><pre>54</pre><pre>55</pre><pre>56</pre><pre>57</pre><pre>58</pre><pre>59</pre><pre>60</pre><pre>61</pre><pre>62</pre><pre>63</pre><pre>64</pre><pre>65</pre><pre>66</pre><pre>67</pre><pre>68</pre><pre>69</pre><pre>70</pre><pre>71</pre><pre>72</pre><pre>73</pre><pre>74</pre><pre>75</pre><pre>76</pre><pre>77</pre><pre>78</pre><pre>79</pre><pre>80</pre><pre>81</pre><pre>82</pre><pre>83</pre><pre>84</pre><pre>85</pre><pre>86</pre><pre>87</pre><pre>88</pre><pre>89</pre><pre>90</pre><pre>91</pre><pre>92</pre><pre>93</pre><pre>94</pre><pre>95</pre><pre>96</pre><pre>97</pre><pre>98</pre><pre>99</pre></div></div><div class="CodeMirror-lines"><div style="position: relative; width: 1248px; margin-left: 27px;" draggable="false"><div style="position: absolute; width: 100%; height: 0; overflow: hidden; visibility: hidden"><pre>    <span class="cm-property">timeUnit</span>:<span class="cm-string">'millisecon</span><span id="CodeMirror-temp-e926f8">d</span></pre></div><pre class="CodeMirror-cursor" style="top: 560px; left: 32px; display: none;">&nbsp;</pre><div style=""><pre>(<span class="cm-comment">/**</span></pre><pre> <span class="cm-comment">* Flotr Defaults</span></pre><pre> <span class="cm-comment">*/</span></pre><pre><span class="cm-variable">Flotr</span>.<span class="cm-property">defaultOptions</span> = {</pre><pre>  <span class="cm-property">colors</span>: [<span class="cm-string">'#00A8F0'</span>, <span class="cm-string">'#C0D800'</span>, <span class="cm-string">'#CB4B4B'</span>, <span class="cm-string">'#4DA74D'</span>, <span class="cm-string">'#9440ED'</span>], <span class="cm-comment">//=&gt; The default colorscheme. When there are &gt; 5 series, additional colors are generated.</span></pre><pre>  <span class="cm-property">ieBackgroundColor</span>: <span class="cm-string">'#FFFFFF'</span>, <span class="cm-comment">// Background color for excanvas clipping</span></pre><pre>  <span class="cm-property">title</span>: <span class="cm-atom">null</span>,             <span class="cm-comment">// =&gt; The graph's title</span></pre><pre>  <span class="cm-property">subtitle</span>: <span class="cm-atom">null</span>,          <span class="cm-comment">// =&gt; The graph's subtitle</span></pre><pre>  <span class="cm-property">shadowSize</span>: <span class="cm-number">4</span>,           <span class="cm-comment">// =&gt; size of the 'fake' shadow</span></pre><pre>  <span class="cm-property">defaultType</span>: <span class="cm-atom">null</span>,       <span class="cm-comment">// =&gt; default series type</span></pre><pre>  <span class="cm-property">HtmlText</span>: <span class="cm-atom">true</span>,          <span class="cm-comment">// =&gt; wether to draw the text using HTML or on the canvas</span></pre><pre>  <span class="cm-property">fontColor</span>: <span class="cm-string">'#545454'</span>,    <span class="cm-comment">// =&gt; default font color</span></pre><pre>  <span class="cm-property">fontSize</span>: <span class="cm-number">7.5</span>,           <span class="cm-comment">// =&gt; canvas' text font size</span></pre><pre>  <span class="cm-property">resolution</span>: <span class="cm-number">1</span>,           <span class="cm-comment">// =&gt; resolution of the graph, to have printer-friendly graphs !</span></pre><pre>  <span class="cm-property">parseFloat</span>: <span class="cm-atom">true</span>,        <span class="cm-comment">// =&gt; whether to preprocess data for floats (ie. if input is string)</span></pre><pre>  <span class="cm-property">xaxis</span>: {</pre><pre>    <span class="cm-property">ticks</span>: <span class="cm-atom">null</span>,           <span class="cm-comment">// =&gt; format: either [1, 3] or [[1, 'a'], 3]</span></pre><pre>    <span class="cm-property">minorTicks</span>: <span class="cm-atom">null</span>,      <span class="cm-comment">// =&gt; format: either [1, 3] or [[1, 'a'], 3]</span></pre><pre>    <span class="cm-property">showLabels</span>: <span class="cm-atom">true</span>,      <span class="cm-comment">// =&gt; setting to true will show the axis ticks labels, hide otherwise</span></pre><pre>    <span class="cm-property">showMinorLabels</span>: <span class="cm-atom">false</span>,<span class="cm-comment">// =&gt; true to show the axis minor ticks labels, false to hide</span></pre><pre>    <span class="cm-property">labelsAngle</span>: <span class="cm-number">0</span>,        <span class="cm-comment">// =&gt; labels' angle, in degrees</span></pre><pre>    <span class="cm-property">title</span>: <span class="cm-atom">null</span>,           <span class="cm-comment">// =&gt; axis title</span></pre><pre>    <span class="cm-property">titleAngle</span>: <span class="cm-number">0</span>,         <span class="cm-comment">// =&gt; axis title's angle, in degrees</span></pre><pre>    <span class="cm-property">noTicks</span>: <span class="cm-number">5</span>,            <span class="cm-comment">// =&gt; number of ticks for automagically generated ticks</span></pre><pre>    <span class="cm-property">minorTickFreq</span>: <span class="cm-atom">null</span>,   <span class="cm-comment">// =&gt; number of minor ticks between major ticks for autogenerated ticks</span></pre><pre>    <span class="cm-property">tickFormatter</span>: <span class="cm-variable">Flotr</span>.<span class="cm-property">defaultTickFormatter</span>, <span class="cm-comment">// =&gt; fn: number, Object -&gt; string</span></pre><pre>    <span class="cm-property">tickDecimals</span>: <span class="cm-atom">null</span>,    <span class="cm-comment">// =&gt; no. of decimals, null means auto</span></pre><pre>    <span class="cm-property">min</span>: <span class="cm-atom">null</span>,             <span class="cm-comment">// =&gt; min. value to show, null means set automatically</span></pre><pre>    <span class="cm-property">max</span>: <span class="cm-atom">null</span>,             <span class="cm-comment">// =&gt; max. value to show, null means set automatically</span></pre><pre>    <span class="cm-property">autoscale</span>: <span class="cm-atom">false</span>,      <span class="cm-comment">// =&gt; Turns autoscaling on with true</span></pre><pre>    <span class="cm-property">autoscaleMargin</span>: <span class="cm-number">0</span>,    <span class="cm-comment">// =&gt; margin in % to add if auto-setting min/max</span></pre><pre>    <span class="cm-property">color</span>: <span class="cm-atom">null</span>,           <span class="cm-comment">// =&gt; color of the ticks</span></pre><pre>    <span class="cm-property">mode</span>: <span class="cm-string">'normal'</span>,        <span class="cm-comment">// =&gt; can be 'time' or 'normal'</span></pre><pre>    <span class="cm-property">timeFormat</span>: <span class="cm-atom">null</span>,</pre><pre>    <span class="cm-property">timeMode</span>:<span class="cm-string">'UTC'</span>,        <span class="cm-comment">// =&gt; For UTC time ('local' for local time).</span></pre><pre><span class="cm-null">    </span><span class="cm-property CodeMirror-selected">timeUnit</span><span class="cm-undefined CodeMirror-selected">:</span><span class="cm-string CodeMirror-selected">'millisecond'</span><span class="cm-undefined">,</span><span class="cm-comment">// =&gt; Unit for time (millisecond, second, minute, hour, day,&nbsp;month, year)</span></pre><pre>    <span class="cm-property">scaling</span>: <span class="cm-string">'linear'</span>,     <span class="cm-comment">// =&gt; Scaling, can be 'linear' or 'logarithmic'</span></pre><pre>    <span class="cm-property">base</span>: <span class="cm-variable">Math</span>.<span class="cm-property">E</span>,</pre><pre>    <span class="cm-property">titleAlign</span>: <span class="cm-string">'center'</span>,</pre><pre>    <span class="cm-property">margin</span>: <span class="cm-atom">true</span>           <span class="cm-comment">// =&gt; Turn off margins with false</span></pre><pre>  },</pre><pre>  <span class="cm-property">x2axis</span>: {},</pre><pre>  <span class="cm-property">yaxis</span>: {</pre><pre>    <span class="cm-property">ticks</span>: <span class="cm-atom">null</span>,           <span class="cm-comment">// =&gt; format: either [1, 3] or [[1, 'a'], 3]</span></pre><pre>    <span class="cm-property">minorTicks</span>: <span class="cm-atom">null</span>,      <span class="cm-comment">// =&gt; format: either [1, 3] or [[1, 'a'], 3]</span></pre><pre>    <span class="cm-property">showLabels</span>: <span class="cm-atom">true</span>,      <span class="cm-comment">// =&gt; setting to true will show the axis ticks labels, hide otherwise</span></pre><pre>    <span class="cm-property">showMinorLabels</span>: <span class="cm-atom">false</span>,<span class="cm-comment">// =&gt; true to show the axis minor ticks labels, false to hide</span></pre><pre>    <span class="cm-property">labelsAngle</span>: <span class="cm-number">0</span>,        <span class="cm-comment">// =&gt; labels' angle, in degrees</span></pre><pre>    <span class="cm-property">title</span>: <span class="cm-atom">null</span>,           <span class="cm-comment">// =&gt; axis title</span></pre><pre>    <span class="cm-property">titleAngle</span>: <span class="cm-number">90</span>,        <span class="cm-comment">// =&gt; axis title's angle, in degrees</span></pre><pre>    <span class="cm-property">noTicks</span>: <span class="cm-number">5</span>,            <span class="cm-comment">// =&gt; number of ticks for automagically generated ticks</span></pre><pre>    <span class="cm-property">minorTickFreq</span>: <span class="cm-atom">null</span>,   <span class="cm-comment">// =&gt; number of minor ticks between major ticks for autogenerated ticks</span></pre><pre>    <span class="cm-property">tickFormatter</span>: <span class="cm-variable">Flotr</span>.<span class="cm-property">defaultTickFormatter</span>, <span class="cm-comment">// =&gt; fn: number, Object -&gt; string</span></pre><pre>    <span class="cm-property">tickDecimals</span>: <span class="cm-atom">null</span>,    <span class="cm-comment">// =&gt; no. of decimals, null means auto</span></pre><pre>    <span class="cm-property">min</span>: <span class="cm-atom">null</span>,             <span class="cm-comment">// =&gt; min. value to show, null means set automatically</span></pre><pre>    <span class="cm-property">max</span>: <span class="cm-atom">null</span>,             <span class="cm-comment">// =&gt; max. value to show, null means set automatically</span></pre><pre>    <span class="cm-property">autoscale</span>: <span class="cm-atom">false</span>,      <span class="cm-comment">// =&gt; Turns autoscaling on with true</span></pre><pre>    <span class="cm-property">autoscaleMargin</span>: <span class="cm-number">0</span>,    <span class="cm-comment">// =&gt; margin in % to add if auto-setting min/max</span></pre><pre>    <span class="cm-property">color</span>: <span class="cm-atom">null</span>,           <span class="cm-comment">// =&gt; The color of the ticks</span></pre><pre>    <span class="cm-property">scaling</span>: <span class="cm-string">'linear'</span>,     <span class="cm-comment">// =&gt; Scaling, can be 'linear' or 'logarithmic'</span></pre><pre>    <span class="cm-property">base</span>: <span class="cm-variable">Math</span>.<span class="cm-property">E</span>,</pre><pre>    <span class="cm-property">titleAlign</span>: <span class="cm-string">'center'</span>,</pre><pre>    <span class="cm-property">margin</span>: <span class="cm-atom">true</span>           <span class="cm-comment">// =&gt; Turn off margins with false</span></pre><pre>  },</pre><pre>  <span class="cm-property">y2axis</span>: {</pre><pre>    <span class="cm-property">titleAngle</span>: <span class="cm-number">270</span></pre><pre>  },</pre><pre>  <span class="cm-property">grid</span>: {</pre><pre>    <span class="cm-property">color</span>: <span class="cm-string">'#545454'</span>,      <span class="cm-comment">// =&gt; primary color used for outline and labels</span></pre><pre>    <span class="cm-property">backgroundColor</span>: <span class="cm-atom">null</span>, <span class="cm-comment">// =&gt; null for transparent, else color</span></pre><pre>    <span class="cm-property">backgroundImage</span>: <span class="cm-atom">null</span>, <span class="cm-comment">// =&gt; background image. String or object with src, left and top</span></pre><pre>    <span class="cm-property">watermarkAlpha</span>: <span class="cm-number">0.4</span>,   <span class="cm-comment">// =&gt; </span></pre><pre>    <span class="cm-property">tickColor</span>: <span class="cm-string">'#DDDDDD'</span>,  <span class="cm-comment">// =&gt; color used for the ticks</span></pre><pre>    <span class="cm-property">labelMargin</span>: <span class="cm-number">3</span>,        <span class="cm-comment">// =&gt; margin in pixels</span></pre><pre>    <span class="cm-property">verticalLines</span>: <span class="cm-atom">true</span>,   <span class="cm-comment">// =&gt; whether to show gridlines in vertical direction</span></pre><pre>    <span class="cm-property">minorVerticalLines</span>: <span class="cm-atom">null</span>, <span class="cm-comment">// =&gt; whether to show gridlines for minor ticks in vertical dir.</span></pre><pre>    <span class="cm-property">horizontalLines</span>: <span class="cm-atom">true</span>, <span class="cm-comment">// =&gt; whether to show gridlines in horizontal direction</span></pre><pre>    <span class="cm-property">minorHorizontalLines</span>: <span class="cm-atom">null</span>, <span class="cm-comment">// =&gt; whether to show gridlines for minor ticks in horizontal dir.</span></pre><pre>    <span class="cm-property">outlineWidth</span>: <span class="cm-number">1</span>,       <span class="cm-comment">// =&gt; width of the grid outline/border in pixels</span></pre><pre>    <span class="cm-property">outline</span> : <span class="cm-string">'nsew'</span>,      <span class="cm-comment">// =&gt; walls of the outline to display</span></pre><pre>    <span class="cm-property">circular</span>: <span class="cm-atom">false</span>        <span class="cm-comment">// =&gt; if set to true, the grid will be circular, must be used when radars are drawn</span></pre><pre>  },</pre><pre>  <span class="cm-property">mouse</span>: {</pre><pre>    <span class="cm-property">track</span>: <span class="cm-atom">false</span>,          <span class="cm-comment">// =&gt; true to track the mouse, no tracking otherwise</span></pre><pre>    <span class="cm-property">trackAll</span>: <span class="cm-atom">false</span>,</pre><pre>    <span class="cm-property">position</span>: <span class="cm-string">'se'</span>,        <span class="cm-comment">// =&gt; position of the value box (default south-east)</span></pre><pre>    <span class="cm-property">relative</span>: <span class="cm-atom">false</span>,       <span class="cm-comment">// =&gt; next to the mouse cursor</span></pre><pre>    <span class="cm-property">trackFormatter</span>: <span class="cm-variable">Flotr</span>.<span class="cm-property">defaultTrackFormatter</span>, <span class="cm-comment">// =&gt; formats the values in the value box</span></pre><pre>    <span class="cm-property">margin</span>: <span class="cm-number">5</span>,             <span class="cm-comment">// =&gt; margin in pixels of the valuebox</span></pre><pre>    <span class="cm-property">lineColor</span>: <span class="cm-string">'#FF3F19'</span>,  <span class="cm-comment">// =&gt; line color of points that are drawn when mouse comes near a value of a series</span></pre><pre>    <span class="cm-property">trackDecimals</span>: <span class="cm-number">1</span>,      <span class="cm-comment">// =&gt; decimals for the track values</span></pre><pre>    <span class="cm-property">sensibility</span>: <span class="cm-number">2</span>,        <span class="cm-comment">// =&gt; the lower this number, the more precise you have to aim to show a value</span></pre><pre>    <span class="cm-property">trackY</span>: <span class="cm-atom">true</span>,          <span class="cm-comment">// =&gt; whether or not to track the mouse in the y axis</span></pre><pre>    <span class="cm-property">radius</span>: <span class="cm-number">3</span>,             <span class="cm-comment">// =&gt; radius of the track point</span></pre><pre>    <span class="cm-property">fillColor</span>: <span class="cm-atom">null</span>,       <span class="cm-comment">// =&gt; color to fill our select bar with only applies to bar and similar graphs (only bars for now)</span></pre><pre>    <span class="cm-property">fillOpacity</span>: <span class="cm-number">0.4</span>       <span class="cm-comment">// =&gt; opacity of the fill color, set to 1 for a solid fill, 0 hides the fill </span></pre><pre>  }</pre><pre>};</pre><pre>)(<span class="cm-variable">document</span>.<span class="cm-property">getElementById</span>(<span class="cm-string">"editor-render-1"</span>));</pre></div></div></div></div></div></div></div></div></div></div>
+</section>
+
+<section>
+  <h2><a id="development">Development</a></h2>
+
+  <p>
+  This project uses <a title="smoosh" href="https://github.com/fat/smoosh">
+  smoosh</a> to build and <a title="Jasmine BDD" href="http://pivotal.github.com/jasmine/">jasmine</a> with <a title="js-imagediff canvas testing" href="https://github.com/HumbleSoftware/js-imagediff">js-imagediff</a> to test.
+  Tests may be executed by <a title="jasmine headless webkit" href="http://johnbintz.github.com/jasmine-headless-webkit/">
+  jasmine-headless-webkit</a> with <code>cd spec; jasmine-headless-webkit -j jasmine.yml -c</code>
+  or by a browser by navigating to <code>spec/SpecRunner.html</code>.
+  </p>
+
+  <h3>Directories</h3>
+  <ul>
+    <li><code>js/</code> main source files</li>
+    <li><code>js/plugins/</code> flotr plugins</li>
+    <li><code>js/types/</code> chart types</li>
+    <li><code>spec/</code> Jasmine tests</li>
+    <li><code>examples/</code> stable and development example pages</li>
+    <li><code>make/</code> build configuration files</li>
+    <li><code>lib/</code> included libraries</li>
+    <li><code>build/</code> temporary directory used during build</li>
+  </ul>
+
+  <h3>Extending</h3>
+
+  <p>
+  Flotr may be extended by adding new graph types and plugins.
+  Graph types define how a particular chart is rendered. Examples include line,
+  bar, pie. Existing graph types are found in <a title="flotr2 graph types" href="https://github.com/HumbleSoftware/Flotr2/tree/master/js/types"><code>
+  js/types/</code></a>.
+  </p>
+
+  <p>
+  Plugins extend the core of flotr with new functionality. They can add
+  interactions, new decorations, etc. Examples include titles, labels and
+  selection.  Plugins are found in <a title="flotr2 plugins" href="https://github.com/HumbleSoftware/Flotr2/tree/master/js/plugins"><code>
+  js/plugins/</code></a>.
+  </p>
+</section>
+
+<section>
+  <h2><a id="resources">Resources</a></h2>
+  <p>
+  <img src="./flotr2 - documentation_files/groups_logo_sm.gif" height="30" width="140" alt="Google Groups">
+  <br>
+  <a href="http://groups.google.com/group/flotr2">Flotr2 is on Google groups</a>
+  </p>
+  <h3>Issues</h3>
+  <p>
+  Please submit issues and pull requests on github at <a title="Flotr2 issues" href="http://github.com/HumbleSoftware/Flotr2/issues">http://github.com/HumbleSoftware/Flotr2/issues</a>.
+  </p>
+  <h3>Source</h3>
+  <p>
+  The source is available on github at <a title="Flotr2 source on github" href="http://github.com/HumbleSoftware/Flotr2">http://github.com/HumbleSoftware/Flotr2</a>.
+  </p>
+</section>
+    </div>
+</div>
+
+<div id="footer-container">
+    <div id="footer">
+        <span class="footer-text">developers of fine software.</span>
+        <ul class="footer-links">
+            <li>
+                <a href="http://humblesoftware.com/home">home</a>
+            </li>
+            <li>
+                <a href="http://humblesoftware.com/terms">terms</a>
+            </li>
+            <li>
+                <a href="http://validator.w3.org/check?uri=referer">valid html5</a>
+            </li>
+        </ul>
+        <span class="copyright">
+            © 2013 <a href="http://humblesoftware.com/home">hsd</a>
+        </span>
+    </div>
+</div>
+</div> 
+<script type="text/javascript" async="" src="./flotr2 - documentation_files/ga.js"></script><script type="text/javascript">
+  var HSD_BASE = '/';
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15129441-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script><script src="./flotr2 - documentation_files/hsd.js"></script>
+<!--[if IE]>
+<script src="/static/lib/FlashCanvas/bin/flashcanvas.js"></script>
+<![endif]-->
+    <script src="./flotr2 - documentation_files/hsd-flotr2.js"></script>
+    <script src="./flotr2 - documentation_files/hsd-flotr2-documentation.js"></script>
+
+
+<div id="rbutr-extension-is-installed"></div><div style="display: none;" class="rbutrInstalled"></div></body></html>
